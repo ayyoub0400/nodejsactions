@@ -14,7 +14,7 @@ on:
       - 'index.js'
       - 'package.json'
       - 'package-lock.json'
-      
+
 jobs:
     codescan:
         runs-on: ubuntu-latest
