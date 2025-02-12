@@ -9,13 +9,12 @@ on:
       - 'package.json'
       - 'package-lock.json'
   pull_request:
-    types: opened
+    types: [opened, synchronize]
     paths:
       - 'index.js'
       - 'package.json'
       - 'package-lock.json'
 
-    
 jobs:
     codescan:
         runs-on: ubuntu-latest
