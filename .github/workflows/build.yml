@@ -8,7 +8,12 @@ on:
       - 'index.js'
       - 'package.json'
       - 'package-lock.json'
-
+  pull_request:
+    types: opened
+    paths:
+      - 'index.js'
+      - 'package.json'
+      - 'package-lock.json'
 
     
 jobs:
