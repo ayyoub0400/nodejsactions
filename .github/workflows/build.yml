@@ -18,10 +18,7 @@ jobs:
 
             - name: Install dependencies
               run: npm ci
-
-            - name: npm build
-              run: npm run build
-
+              
             - name: CodeQL scan
               uses: github/codeql-action/init@v2
               with:
