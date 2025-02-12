@@ -3,7 +3,7 @@ name: build node application
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
     codescan:
         runs-on: ubuntu-latest
