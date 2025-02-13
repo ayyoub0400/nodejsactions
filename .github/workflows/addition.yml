@@ -1,0 +1,22 @@
+Name: addition
+
+on:
+    workflow_call:
+        inputs:
+            number1:
+                type: number
+                description: 'First number'
+                required: true
+                default: 0
+            number2:
+                type: number
+                description: 'Second number'
+                required: true
+                default: 0
+
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run workflow
+              run: echo ${{ inputs.number1 }} + ${{ inputs.number2 }} = $((inputs.number1 + inputs.number2))
