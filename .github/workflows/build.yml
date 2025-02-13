@@ -5,15 +5,15 @@ on:
     branches:
       - main
     paths:
-      - 'index.js'
-      - 'package.json'
-      - 'package-lock.json'
+      - './src/index.js'
+      - './src/package.json'
+      - './src/package-lock.json'
   pull_request:
     types: [opened, synchronize]
     paths:
-      - 'index.js'
-      - 'package.json'
-      - 'package-lock.json'
+      - './src/index.js'
+      - './src/package.json'
+      - './src/package-lock.json'
 
 jobs:
     codescan:
