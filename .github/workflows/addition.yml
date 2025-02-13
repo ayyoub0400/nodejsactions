@@ -1,4 +1,4 @@
-Name: addition
+name: addition
 
 on:
     workflow_call:
